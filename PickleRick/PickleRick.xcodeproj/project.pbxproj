@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */; };
+		E5AD1BEA298AD4C6005777DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BE9298AD4C6005777DF /* ContentView.swift */; };
+		E5AD1BEC298AD4C8005777DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AD1BEB298AD4C8005777DF /* Assets.xcassets */; };
+		E5AD1BEF298AD4C8005777DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AD1BEE298AD4C8005777DF /* Preview Assets.xcassets */; };
+		E5AD1BF9298AD4C8005777DF /* PickleRickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BF8298AD4C8005777DF /* PickleRickTests.swift */; };
+		E5AD1C03298AD4C8005777DF /* PickleRickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C02298AD4C8005777DF /* PickleRickUITests.swift */; };
+		E5AD1C05298AD4C8005777DF /* PickleRickUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C04298AD4C8005777DF /* PickleRickUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5AD1BF5298AD4C8005777DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5AD1BDC298AD4C6005777DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5AD1BE3298AD4C6005777DF;
+			remoteInfo = PickleRick;
+		};
+		E5AD1BFF298AD4C8005777DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5AD1BDC298AD4C6005777DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5AD1BE3298AD4C6005777DF;
+			remoteInfo = PickleRick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E5AD1BE4298AD4C6005777DF /* PickleRick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickleRick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickApp.swift; sourceTree = "<group>"; };
+		E5AD1BE9298AD4C6005777DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5AD1BEB298AD4C8005777DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5AD1BEE298AD4C8005777DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5AD1BF4298AD4C8005777DF /* PickleRickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickleRickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AD1BF8298AD4C8005777DF /* PickleRickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickTests.swift; sourceTree = "<group>"; };
+		E5AD1BFE298AD4C8005777DF /* PickleRickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickleRickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AD1C02298AD4C8005777DF /* PickleRickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickUITests.swift; sourceTree = "<group>"; };
+		E5AD1C04298AD4C8005777DF /* PickleRickUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5AD1BE1298AD4C6005777DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5AD1BF1298AD4C8005777DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5AD1BFB298AD4C8005777DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5AD1BDB298AD4C6005777DF = {
+			isa = PBXGroup;
+			children = (
+				E5AD1BE6298AD4C6005777DF /* PickleRick */,
+				E5AD1BF7298AD4C8005777DF /* PickleRickTests */,
+				E5AD1C01298AD4C8005777DF /* PickleRickUITests */,
+				E5AD1BE5298AD4C6005777DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5AD1BE5298AD4C6005777DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1BE4298AD4C6005777DF /* PickleRick.app */,
+				E5AD1BF4298AD4C8005777DF /* PickleRickTests.xctest */,
+				E5AD1BFE298AD4C8005777DF /* PickleRickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5AD1BE6298AD4C6005777DF /* PickleRick */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */,
+				E5AD1BE9298AD4C6005777DF /* ContentView.swift */,
+				E5AD1BEB298AD4C8005777DF /* Assets.xcassets */,
+				E5AD1BED298AD4C8005777DF /* Preview Content */,
+			);
+			path = PickleRick;
+			sourceTree = "<group>";
+		};
+		E5AD1BED298AD4C8005777DF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1BEE298AD4C8005777DF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5AD1BF7298AD4C8005777DF /* PickleRickTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1BF8298AD4C8005777DF /* PickleRickTests.swift */,
+			);
+			path = PickleRickTests;
+			sourceTree = "<group>";
+		};
+		E5AD1C01298AD4C8005777DF /* PickleRickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C02298AD4C8005777DF /* PickleRickUITests.swift */,
+				E5AD1C04298AD4C8005777DF /* PickleRickUITestsLaunchTests.swift */,
+			);
+			path = PickleRickUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5AD1BE3298AD4C6005777DF /* PickleRick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5AD1C08298AD4C8005777DF /* Build configuration list for PBXNativeTarget "PickleRick" */;
+			buildPhases = (
+				E5AD1BE0298AD4C6005777DF /* Sources */,
+				E5AD1BE1298AD4C6005777DF /* Frameworks */,
+				E5AD1BE2298AD4C6005777DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PickleRick;
+			productName = PickleRick;
+			productReference = E5AD1BE4298AD4C6005777DF /* PickleRick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5AD1BF3298AD4C8005777DF /* PickleRickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5AD1C0B298AD4C8005777DF /* Build configuration list for PBXNativeTarget "PickleRickTests" */;
+			buildPhases = (
+				E5AD1BF0298AD4C8005777DF /* Sources */,
+				E5AD1BF1298AD4C8005777DF /* Frameworks */,
+				E5AD1BF2298AD4C8005777DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5AD1BF6298AD4C8005777DF /* PBXTargetDependency */,
+			);
+			name = PickleRickTests;
+			productName = PickleRickTests;
+			productReference = E5AD1BF4298AD4C8005777DF /* PickleRickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5AD1BFD298AD4C8005777DF /* PickleRickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5AD1C0E298AD4C8005777DF /* Build configuration list for PBXNativeTarget "PickleRickUITests" */;
+			buildPhases = (
+				E5AD1BFA298AD4C8005777DF /* Sources */,
+				E5AD1BFB298AD4C8005777DF /* Frameworks */,
+				E5AD1BFC298AD4C8005777DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5AD1C00298AD4C8005777DF /* PBXTargetDependency */,
+			);
+			name = PickleRickUITests;
+			productName = PickleRickUITests;
+			productReference = E5AD1BFE298AD4C8005777DF /* PickleRickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5AD1BDC298AD4C6005777DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					E5AD1BE3298AD4C6005777DF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					E5AD1BF3298AD4C8005777DF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E5AD1BE3298AD4C6005777DF;
+					};
+					E5AD1BFD298AD4C8005777DF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E5AD1BE3298AD4C6005777DF;
+					};
+				};
+			};
+			buildConfigurationList = E5AD1BDF298AD4C6005777DF /* Build configuration list for PBXProject "PickleRick" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5AD1BDB298AD4C6005777DF;
+			productRefGroup = E5AD1BE5298AD4C6005777DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5AD1BE3298AD4C6005777DF /* PickleRick */,
+				E5AD1BF3298AD4C8005777DF /* PickleRickTests */,
+				E5AD1BFD298AD4C8005777DF /* PickleRickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5AD1BE2298AD4C6005777DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5AD1BEF298AD4C8005777DF /* Preview Assets.xcassets in Resources */,
+				E5AD1BEC298AD4C8005777DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5AD1BF2298AD4C8005777DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5AD1BFC298AD4C8005777DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5AD1BE0298AD4C6005777DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5AD1BEA298AD4C6005777DF /* ContentView.swift in Sources */,
+				E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5AD1BF0298AD4C8005777DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5AD1BF9298AD4C8005777DF /* PickleRickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5AD1BFA298AD4C8005777DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5AD1C03298AD4C8005777DF /* PickleRickUITests.swift in Sources */,
+				E5AD1C05298AD4C8005777DF /* PickleRickUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5AD1BF6298AD4C8005777DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5AD1BE3298AD4C6005777DF /* PickleRick */;
+			targetProxy = E5AD1BF5298AD4C8005777DF /* PBXContainerItemProxy */;
+		};
+		E5AD1C00298AD4C8005777DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5AD1BE3298AD4C6005777DF /* PickleRick */;
+			targetProxy = E5AD1BFF298AD4C8005777DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E5AD1C06298AD4C8005777DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5AD1C07298AD4C8005777DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5AD1C09298AD4C8005777DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PickleRick/Preview Content\"";
+				DEVELOPMENT_TEAM = 34Z652334Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VenomSnake.PickleRick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5AD1C0A298AD4C8005777DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PickleRick/Preview Content\"";
+				DEVELOPMENT_TEAM = 34Z652334Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VenomSnake.PickleRick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E5AD1C0C298AD4C8005777DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34Z652334Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VenomSnake.PickleRickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickleRick.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PickleRick";
+			};
+			name = Debug;
+		};
+		E5AD1C0D298AD4C8005777DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34Z652334Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VenomSnake.PickleRickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickleRick.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PickleRick";
+			};
+			name = Release;
+		};
+		E5AD1C0F298AD4C8005777DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34Z652334Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VenomSnake.PickleRickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PickleRick;
+			};
+			name = Debug;
+		};
+		E5AD1C10298AD4C8005777DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34Z652334Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VenomSnake.PickleRickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PickleRick;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5AD1BDF298AD4C6005777DF /* Build configuration list for PBXProject "PickleRick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5AD1C06298AD4C8005777DF /* Debug */,
+				E5AD1C07298AD4C8005777DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5AD1C08298AD4C8005777DF /* Build configuration list for PBXNativeTarget "PickleRick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5AD1C09298AD4C8005777DF /* Debug */,
+				E5AD1C0A298AD4C8005777DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5AD1C0B298AD4C8005777DF /* Build configuration list for PBXNativeTarget "PickleRickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5AD1C0C298AD4C8005777DF /* Debug */,
+				E5AD1C0D298AD4C8005777DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5AD1C0E298AD4C8005777DF /* Build configuration list for PBXNativeTarget "PickleRickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5AD1C0F298AD4C8005777DF /* Debug */,
+				E5AD1C10298AD4C8005777DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5AD1BDC298AD4C6005777DF /* Project object */;
+}
