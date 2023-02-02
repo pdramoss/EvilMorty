@@ -30,6 +30,9 @@
 		E5AD1C4C298C5D76005777DF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C4B298C5D76005777DF /* LoadingView.swift */; };
 		E5AD1C4F298C61B6005777DF /* CharacterListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C4E298C61B6005777DF /* CharacterListViewModelTest.swift */; };
 		E5AD1C51298C622A005777DF /* CharacterDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C50298C622A005777DF /* CharacterDetailResponse.swift */; };
+		E5AD1C53298C6B70005777DF /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C52298C6B70005777DF /* CharacterListView.swift */; };
+		E5AD1C56298C730B005777DF /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C55298C730B005777DF /* View+Extensions.swift */; };
+		E5AD1C58298C8040005777DF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C57298C8040005777DF /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		E5AD1C4B298C5D76005777DF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E5AD1C4E298C61B6005777DF /* CharacterListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModelTest.swift; sourceTree = "<group>"; };
 		E5AD1C50298C622A005777DF /* CharacterDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailResponse.swift; sourceTree = "<group>"; };
+		E5AD1C52298C6B70005777DF /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		E5AD1C55298C730B005777DF /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		E5AD1C57298C8040005777DF /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 				E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */,
 				E5AD1BEB298AD4C8005777DF /* Assets.xcassets */,
 				E5AD1C23298C1B27005777DF /* EnvironmentConfig */,
+				E5AD1C54298C72DF005777DF /* Extensions */,
 				E5AD1C27298C1F48005777DF /* Logger */,
 				E5AD1C19298C154A005777DF /* Models */,
 				E5AD1C20298C1584005777DF /* Preview Content */,
@@ -212,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				E5AD1C3D298C5030005777DF /* CharacterListScreen.swift */,
-				E5AD1C46298C5849005777DF /* BigBaseView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -229,8 +235,10 @@
 		E5AD1C48298C5A67005777DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E5AD1C46298C5849005777DF /* BigBaseView.swift */,
 				E5AD1C49298C5A91005777DF /* FailedView.swift */,
 				E5AD1C4B298C5D76005777DF /* LoadingView.swift */,
+				E5AD1C52298C6B70005777DF /* CharacterListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +249,15 @@
 				E5AD1C4E298C61B6005777DF /* CharacterListViewModelTest.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E5AD1C54298C72DF005777DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C55298C730B005777DF /* View+Extensions.swift */,
+				E5AD1C57298C8040005777DF /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +372,10 @@
 				E5AD1C2D298C1FC1005777DF /* Logger.swift in Sources */,
 				E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */,
 				E5AD1C47298C5849005777DF /* BigBaseView.swift in Sources */,
+				E5AD1C56298C730B005777DF /* View+Extensions.swift in Sources */,
 				E5AD1C1E298C154A005777DF /* CharacterResponse.swift in Sources */,
+				E5AD1C58298C8040005777DF /* String+Extensions.swift in Sources */,
+				E5AD1C53298C6B70005777DF /* CharacterListView.swift in Sources */,
 				E5AD1C4A298C5A91005777DF /* FailedView.swift in Sources */,
 				E5AD1C33298C248A005777DF /* CharactersServiceProtocol.swift in Sources */,
 				E5AD1C1D298C154A005777DF /* InfoResponse.swift in Sources */,
@@ -506,6 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PickleRick/Preview Content\"";
@@ -516,8 +537,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -536,6 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PickleRick/Preview Content\"";
@@ -546,8 +567,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct BigBaseView<Content>: View where Content: View {
-    private let state: LoadingState = .loading
+    private var state: LoadingState = .loading
     private let content: Content
     
     public init(state: LoadingState, @ViewBuilder content: () -> Content) {
+        self.state = state
         self.content = content()
     }
     

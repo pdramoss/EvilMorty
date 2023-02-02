@@ -28,7 +28,7 @@ struct CharacterOriginResponse: Codable {
 enum CharacterStatusResponse: String, Codable {
     case alive = "Alive"
     case dead = "Dead"
-    case unknown = "Unknown"
+    case unknown = "unknown"
     case none = ""
 }
 
@@ -44,6 +44,16 @@ enum CharacterGenderResponse: String, Codable {
     case female = "Female"
     case male = "Male"
     case genderless = "Genderless"
-    case unknown = "Unknown"
+    case unknown = "unknown"
     case none = ""
+    
+    var emoji: String {
+        switch self {
+        case .female: return "👩‍🦰"
+        case .male: return "🧑‍🦰"
+        case .genderless: return "🥷"
+        case .unknown: return "👽"
+        case .none: return "🤖"
+        }
+    }
 }

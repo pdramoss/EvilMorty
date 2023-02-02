@@ -16,8 +16,13 @@ struct CharacterListScreen: View {
     
     var body: some View {
         BigBaseView(state: self.charactersVM.loadingState) {
-            Text("Example")
+            CharacterListView(characters: self.charactersVM.characters)
         }
+        .onAppear{
+            self.charactersVM.getAllCharacters()
+        }
+        .navigationTitle("Characters")
+        .embedNavigationView()
     }
 }
 
