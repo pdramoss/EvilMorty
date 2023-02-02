@@ -1,0 +1,12 @@
+//
+//  Dev.xcconfig
+//  PickleRick
+//
+//  Created by Pedro Ramos on 2/02/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+base_url = rickandmortyapi.com/api/character
+log_enabled = true

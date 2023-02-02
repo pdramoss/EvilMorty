@@ -10,11 +10,18 @@
 		E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */; };
 		E5AD1BEA298AD4C6005777DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BE9298AD4C6005777DF /* ContentView.swift */; };
 		E5AD1BEC298AD4C8005777DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AD1BEB298AD4C8005777DF /* Assets.xcassets */; };
-		E5AD1BF9298AD4C8005777DF /* PickleRickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BF8298AD4C8005777DF /* PickleRickTests.swift */; };
 		E5AD1C1D298C154A005777DF /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C1A298C154A005777DF /* InfoResponse.swift */; };
 		E5AD1C1E298C154A005777DF /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C1B298C154A005777DF /* CharacterResponse.swift */; };
 		E5AD1C1F298C154A005777DF /* PrincipalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C1C298C154A005777DF /* PrincipalResponse.swift */; };
 		E5AD1C22298C1584005777DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AD1C21298C1584005777DF /* Preview Assets.xcassets */; };
+		E5AD1C26298C1E3A005777DF /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C25298C1E3A005777DF /* BuildConfiguration.swift */; };
+		E5AD1C29298C1F64005777DF /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C28298C1F64005777DF /* LoggerProtocol.swift */; };
+		E5AD1C2D298C1FC1005777DF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C2C298C1FC1005777DF /* Logger.swift */; };
+		E5AD1C30298C236B005777DF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C2F298C236B005777DF /* NetworkError.swift */; };
+		E5AD1C33298C248A005777DF /* CharactersServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C32298C248A005777DF /* CharactersServiceProtocol.swift */; };
+		E5AD1C35298C281D005777DF /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C34298C281D005777DF /* CharacterService.swift */; };
+		E5AD1C38298C2D46005777DF /* CharacterServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C37298C2D46005777DF /* CharacterServiceTest.swift */; };
+		E5AD1C3B298C30C0005777DF /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C3A298C30C0005777DF /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,12 +40,20 @@
 		E5AD1BE9298AD4C6005777DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5AD1BEB298AD4C8005777DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5AD1BF4298AD4C8005777DF /* PickleRickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickleRickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5AD1BF8298AD4C8005777DF /* PickleRickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickTests.swift; sourceTree = "<group>"; };
 		E5AD1C11298C0E1B005777DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E5AD1C1A298C154A005777DF /* InfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoResponse.swift; sourceTree = "<group>"; };
 		E5AD1C1B298C154A005777DF /* CharacterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
 		E5AD1C1C298C154A005777DF /* PrincipalResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalResponse.swift; sourceTree = "<group>"; };
 		E5AD1C21298C1584005777DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5AD1C24298C1B5E005777DF /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
+		E5AD1C25298C1E3A005777DF /* BuildConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfiguration.swift; sourceTree = "<group>"; };
+		E5AD1C28298C1F64005777DF /* LoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerProtocol.swift; sourceTree = "<group>"; };
+		E5AD1C2C298C1FC1005777DF /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E5AD1C2F298C236B005777DF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E5AD1C32298C248A005777DF /* CharactersServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersServiceProtocol.swift; sourceTree = "<group>"; };
+		E5AD1C34298C281D005777DF /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+		E5AD1C37298C2D46005777DF /* CharacterServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterServiceTest.swift; sourceTree = "<group>"; };
+		E5AD1C3A298C30C0005777DF /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +99,11 @@
 				E5AD1BE9298AD4C6005777DF /* ContentView.swift */,
 				E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */,
 				E5AD1BEB298AD4C8005777DF /* Assets.xcassets */,
+				E5AD1C23298C1B27005777DF /* EnvironmentConfig */,
+				E5AD1C27298C1F48005777DF /* Logger */,
 				E5AD1C19298C154A005777DF /* Models */,
 				E5AD1C20298C1584005777DF /* Preview Content */,
+				E5AD1C2E298C233B005777DF /* Services */,
 			);
 			path = PickleRick;
 			sourceTree = "<group>";
@@ -93,7 +111,8 @@
 		E5AD1BF7298AD4C8005777DF /* PickleRickTests */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD1BF8298AD4C8005777DF /* PickleRickTests.swift */,
+				E5AD1C39298C307E005777DF /* Mocks */,
+				E5AD1C36298C2CFA005777DF /* Services */,
 			);
 			path = PickleRickTests;
 			sourceTree = "<group>";
@@ -114,6 +133,58 @@
 				E5AD1C21298C1584005777DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5AD1C23298C1B27005777DF /* EnvironmentConfig */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C24298C1B5E005777DF /* Dev.xcconfig */,
+				E5AD1C25298C1E3A005777DF /* BuildConfiguration.swift */,
+			);
+			path = EnvironmentConfig;
+			sourceTree = "<group>";
+		};
+		E5AD1C27298C1F48005777DF /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C28298C1F64005777DF /* LoggerProtocol.swift */,
+				E5AD1C2C298C1FC1005777DF /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		E5AD1C2E298C233B005777DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C31298C245B005777DF /* Protocols */,
+				E5AD1C2F298C236B005777DF /* NetworkError.swift */,
+				E5AD1C34298C281D005777DF /* CharacterService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E5AD1C31298C245B005777DF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C32298C248A005777DF /* CharactersServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E5AD1C36298C2CFA005777DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C37298C2D46005777DF /* CharacterServiceTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E5AD1C39298C307E005777DF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C3A298C30C0005777DF /* MockURLProtocol.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +240,7 @@
 					};
 					E5AD1BF3298AD4C8005777DF = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 						TestTargetID = E5AD1BE3298AD4C6005777DF;
 					};
 				};
@@ -216,11 +288,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AD1C29298C1F64005777DF /* LoggerProtocol.swift in Sources */,
 				E5AD1BEA298AD4C6005777DF /* ContentView.swift in Sources */,
+				E5AD1C35298C281D005777DF /* CharacterService.swift in Sources */,
+				E5AD1C26298C1E3A005777DF /* BuildConfiguration.swift in Sources */,
+				E5AD1C2D298C1FC1005777DF /* Logger.swift in Sources */,
 				E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */,
 				E5AD1C1E298C154A005777DF /* CharacterResponse.swift in Sources */,
+				E5AD1C33298C248A005777DF /* CharactersServiceProtocol.swift in Sources */,
 				E5AD1C1D298C154A005777DF /* InfoResponse.swift in Sources */,
 				E5AD1C1F298C154A005777DF /* PrincipalResponse.swift in Sources */,
+				E5AD1C30298C236B005777DF /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +306,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5AD1BF9298AD4C8005777DF /* PickleRickTests.swift in Sources */,
+				E5AD1C38298C2D46005777DF /* CharacterServiceTest.swift in Sources */,
+				E5AD1C3B298C30C0005777DF /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +324,7 @@
 /* Begin XCBuildConfiguration section */
 		E5AD1C06298AD4C8005777DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5AD1C24298C1B5E005777DF /* Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -422,15 +502,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34Z652334Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = VenomSnake.PickleRickTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickleRick.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PickleRick";
@@ -442,11 +529,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34Z652334Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = VenomSnake.PickleRickTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

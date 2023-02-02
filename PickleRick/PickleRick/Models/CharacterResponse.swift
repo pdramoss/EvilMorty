@@ -26,9 +26,9 @@ struct CharacterOriginResponse: Codable {
 }
 
 enum CharacterStatusResponse: String, Codable {
-    case alive = "alive"
-    case dead = "dead"
-    case unknown = "unknown"
+    case alive = "Alive"
+    case dead = "Dead"
+    case unknown = "Unknown"
     case none = ""
 }
 
@@ -41,9 +41,9 @@ enum CharacterSpeciesResponse: String, Codable {
 }
 
 enum CharacterGenderResponse: String, Codable {
-    case female = "female"
-    case male = "male"
-    case genderless = "genderless"
-    case unknown = "unknown"
+    case female = "Female"
+    case male = "Male"
+    case genderless = "Genderless"
+    case unknown = "Unknown"
     case none = ""
 }
