@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */; };
-		E5AD1BEA298AD4C6005777DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BE9298AD4C6005777DF /* ContentView.swift */; };
 		E5AD1BEC298AD4C8005777DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AD1BEB298AD4C8005777DF /* Assets.xcassets */; };
 		E5AD1C1D298C154A005777DF /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C1A298C154A005777DF /* InfoResponse.swift */; };
 		E5AD1C1E298C154A005777DF /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C1B298C154A005777DF /* CharacterResponse.swift */; };
@@ -22,6 +21,15 @@
 		E5AD1C35298C281D005777DF /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C34298C281D005777DF /* CharacterService.swift */; };
 		E5AD1C38298C2D46005777DF /* CharacterServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C37298C2D46005777DF /* CharacterServiceTest.swift */; };
 		E5AD1C3B298C30C0005777DF /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C3A298C30C0005777DF /* MockURLProtocol.swift */; };
+		E5AD1C3E298C5030005777DF /* CharacterListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C3D298C5030005777DF /* CharacterListScreen.swift */; };
+		E5AD1C41298C5131005777DF /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C40298C5131005777DF /* CharacterListViewModel.swift */; };
+		E5AD1C43298C55D1005777DF /* MockCharactersServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C42298C55D1005777DF /* MockCharactersServices.swift */; };
+		E5AD1C45298C5741005777DF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C44298C5741005777DF /* BaseViewModel.swift */; };
+		E5AD1C47298C5849005777DF /* BigBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C46298C5849005777DF /* BigBaseView.swift */; };
+		E5AD1C4A298C5A91005777DF /* FailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C49298C5A91005777DF /* FailedView.swift */; };
+		E5AD1C4C298C5D76005777DF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C4B298C5D76005777DF /* LoadingView.swift */; };
+		E5AD1C4F298C61B6005777DF /* CharacterListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C4E298C61B6005777DF /* CharacterListViewModelTest.swift */; };
+		E5AD1C51298C622A005777DF /* CharacterDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C50298C622A005777DF /* CharacterDetailResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +45,6 @@
 /* Begin PBXFileReference section */
 		E5AD1BE4298AD4C6005777DF /* PickleRick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickleRick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickApp.swift; sourceTree = "<group>"; };
-		E5AD1BE9298AD4C6005777DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5AD1BEB298AD4C8005777DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5AD1BF4298AD4C8005777DF /* PickleRickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickleRickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AD1C11298C0E1B005777DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +61,15 @@
 		E5AD1C34298C281D005777DF /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		E5AD1C37298C2D46005777DF /* CharacterServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterServiceTest.swift; sourceTree = "<group>"; };
 		E5AD1C3A298C30C0005777DF /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		E5AD1C3D298C5030005777DF /* CharacterListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListScreen.swift; sourceTree = "<group>"; };
+		E5AD1C40298C5131005777DF /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		E5AD1C42298C55D1005777DF /* MockCharactersServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharactersServices.swift; sourceTree = "<group>"; };
+		E5AD1C44298C5741005777DF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		E5AD1C46298C5849005777DF /* BigBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBaseView.swift; sourceTree = "<group>"; };
+		E5AD1C49298C5A91005777DF /* FailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedView.swift; sourceTree = "<group>"; };
+		E5AD1C4B298C5D76005777DF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E5AD1C4E298C61B6005777DF /* CharacterListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModelTest.swift; sourceTree = "<group>"; };
+		E5AD1C50298C622A005777DF /* CharacterDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,14 +112,16 @@
 			isa = PBXGroup;
 			children = (
 				E5AD1C11298C0E1B005777DF /* Info.plist */,
-				E5AD1BE9298AD4C6005777DF /* ContentView.swift */,
 				E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */,
 				E5AD1BEB298AD4C8005777DF /* Assets.xcassets */,
 				E5AD1C23298C1B27005777DF /* EnvironmentConfig */,
 				E5AD1C27298C1F48005777DF /* Logger */,
 				E5AD1C19298C154A005777DF /* Models */,
 				E5AD1C20298C1584005777DF /* Preview Content */,
+				E5AD1C3C298C500E005777DF /* Screens */,
 				E5AD1C2E298C233B005777DF /* Services */,
+				E5AD1C3F298C50BF005777DF /* ViewModels */,
+				E5AD1C48298C5A67005777DF /* Views */,
 			);
 			path = PickleRick;
 			sourceTree = "<group>";
@@ -111,6 +129,7 @@
 		E5AD1BF7298AD4C8005777DF /* PickleRickTests */ = {
 			isa = PBXGroup;
 			children = (
+				E5AD1C4D298C61A1005777DF /* ViewModels */,
 				E5AD1C39298C307E005777DF /* Mocks */,
 				E5AD1C36298C2CFA005777DF /* Services */,
 			);
@@ -123,6 +142,7 @@
 				E5AD1C1A298C154A005777DF /* InfoResponse.swift */,
 				E5AD1C1B298C154A005777DF /* CharacterResponse.swift */,
 				E5AD1C1C298C154A005777DF /* PrincipalResponse.swift */,
+				E5AD1C50298C622A005777DF /* CharacterDetailResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,8 +203,44 @@
 			isa = PBXGroup;
 			children = (
 				E5AD1C3A298C30C0005777DF /* MockURLProtocol.swift */,
+				E5AD1C42298C55D1005777DF /* MockCharactersServices.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E5AD1C3C298C500E005777DF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C3D298C5030005777DF /* CharacterListScreen.swift */,
+				E5AD1C46298C5849005777DF /* BigBaseView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E5AD1C3F298C50BF005777DF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C40298C5131005777DF /* CharacterListViewModel.swift */,
+				E5AD1C44298C5741005777DF /* BaseViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E5AD1C48298C5A67005777DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C49298C5A91005777DF /* FailedView.swift */,
+				E5AD1C4B298C5D76005777DF /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E5AD1C4D298C61A1005777DF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C4E298C61B6005777DF /* CharacterListViewModelTest.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,12 +345,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5AD1C29298C1F64005777DF /* LoggerProtocol.swift in Sources */,
-				E5AD1BEA298AD4C6005777DF /* ContentView.swift in Sources */,
+				E5AD1C51298C622A005777DF /* CharacterDetailResponse.swift in Sources */,
+				E5AD1C4C298C5D76005777DF /* LoadingView.swift in Sources */,
+				E5AD1C41298C5131005777DF /* CharacterListViewModel.swift in Sources */,
+				E5AD1C3E298C5030005777DF /* CharacterListScreen.swift in Sources */,
+				E5AD1C45298C5741005777DF /* BaseViewModel.swift in Sources */,
 				E5AD1C35298C281D005777DF /* CharacterService.swift in Sources */,
 				E5AD1C26298C1E3A005777DF /* BuildConfiguration.swift in Sources */,
 				E5AD1C2D298C1FC1005777DF /* Logger.swift in Sources */,
 				E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */,
+				E5AD1C47298C5849005777DF /* BigBaseView.swift in Sources */,
 				E5AD1C1E298C154A005777DF /* CharacterResponse.swift in Sources */,
+				E5AD1C4A298C5A91005777DF /* FailedView.swift in Sources */,
 				E5AD1C33298C248A005777DF /* CharactersServiceProtocol.swift in Sources */,
 				E5AD1C1D298C154A005777DF /* InfoResponse.swift in Sources */,
 				E5AD1C1F298C154A005777DF /* PrincipalResponse.swift in Sources */,
@@ -306,7 +368,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AD1C4F298C61B6005777DF /* CharacterListViewModelTest.swift in Sources */,
 				E5AD1C38298C2D46005777DF /* CharacterServiceTest.swift in Sources */,
+				E5AD1C43298C55D1005777DF /* MockCharactersServices.swift in Sources */,
 				E5AD1C3B298C30C0005777DF /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
