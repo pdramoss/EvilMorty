@@ -10,21 +10,15 @@
 		E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */; };
 		E5AD1BEA298AD4C6005777DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BE9298AD4C6005777DF /* ContentView.swift */; };
 		E5AD1BEC298AD4C8005777DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AD1BEB298AD4C8005777DF /* Assets.xcassets */; };
-		E5AD1BEF298AD4C8005777DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AD1BEE298AD4C8005777DF /* Preview Assets.xcassets */; };
 		E5AD1BF9298AD4C8005777DF /* PickleRickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BF8298AD4C8005777DF /* PickleRickTests.swift */; };
-		E5AD1C03298AD4C8005777DF /* PickleRickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C02298AD4C8005777DF /* PickleRickUITests.swift */; };
-		E5AD1C05298AD4C8005777DF /* PickleRickUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C04298AD4C8005777DF /* PickleRickUITestsLaunchTests.swift */; };
+		E5AD1C1D298C154A005777DF /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C1A298C154A005777DF /* InfoResponse.swift */; };
+		E5AD1C1E298C154A005777DF /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C1B298C154A005777DF /* CharacterResponse.swift */; };
+		E5AD1C1F298C154A005777DF /* PrincipalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C1C298C154A005777DF /* PrincipalResponse.swift */; };
+		E5AD1C22298C1584005777DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AD1C21298C1584005777DF /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E5AD1BF5298AD4C8005777DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E5AD1BDC298AD4C6005777DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5AD1BE3298AD4C6005777DF;
-			remoteInfo = PickleRick;
-		};
-		E5AD1BFF298AD4C8005777DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E5AD1BDC298AD4C6005777DF /* Project object */;
 			proxyType = 1;
@@ -38,12 +32,13 @@
 		E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickApp.swift; sourceTree = "<group>"; };
 		E5AD1BE9298AD4C6005777DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5AD1BEB298AD4C8005777DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E5AD1BEE298AD4C8005777DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5AD1BF4298AD4C8005777DF /* PickleRickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickleRickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AD1BF8298AD4C8005777DF /* PickleRickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickTests.swift; sourceTree = "<group>"; };
-		E5AD1BFE298AD4C8005777DF /* PickleRickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickleRickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5AD1C02298AD4C8005777DF /* PickleRickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickUITests.swift; sourceTree = "<group>"; };
-		E5AD1C04298AD4C8005777DF /* PickleRickUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5AD1C11298C0E1B005777DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E5AD1C1A298C154A005777DF /* InfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoResponse.swift; sourceTree = "<group>"; };
+		E5AD1C1B298C154A005777DF /* CharacterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		E5AD1C1C298C154A005777DF /* PrincipalResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalResponse.swift; sourceTree = "<group>"; };
+		E5AD1C21298C1584005777DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +56,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5AD1BFB298AD4C8005777DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +64,6 @@
 			children = (
 				E5AD1BE6298AD4C6005777DF /* PickleRick */,
 				E5AD1BF7298AD4C8005777DF /* PickleRickTests */,
-				E5AD1C01298AD4C8005777DF /* PickleRickUITests */,
 				E5AD1BE5298AD4C6005777DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +73,6 @@
 			children = (
 				E5AD1BE4298AD4C6005777DF /* PickleRick.app */,
 				E5AD1BF4298AD4C8005777DF /* PickleRickTests.xctest */,
-				E5AD1BFE298AD4C8005777DF /* PickleRickUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,20 +80,14 @@
 		E5AD1BE6298AD4C6005777DF /* PickleRick */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */,
+				E5AD1C11298C0E1B005777DF /* Info.plist */,
 				E5AD1BE9298AD4C6005777DF /* ContentView.swift */,
+				E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */,
 				E5AD1BEB298AD4C8005777DF /* Assets.xcassets */,
-				E5AD1BED298AD4C8005777DF /* Preview Content */,
+				E5AD1C19298C154A005777DF /* Models */,
+				E5AD1C20298C1584005777DF /* Preview Content */,
 			);
 			path = PickleRick;
-			sourceTree = "<group>";
-		};
-		E5AD1BED298AD4C8005777DF /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E5AD1BEE298AD4C8005777DF /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		E5AD1BF7298AD4C8005777DF /* PickleRickTests */ = {
@@ -118,13 +98,22 @@
 			path = PickleRickTests;
 			sourceTree = "<group>";
 		};
-		E5AD1C01298AD4C8005777DF /* PickleRickUITests */ = {
+		E5AD1C19298C154A005777DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD1C02298AD4C8005777DF /* PickleRickUITests.swift */,
-				E5AD1C04298AD4C8005777DF /* PickleRickUITestsLaunchTests.swift */,
+				E5AD1C1A298C154A005777DF /* InfoResponse.swift */,
+				E5AD1C1B298C154A005777DF /* CharacterResponse.swift */,
+				E5AD1C1C298C154A005777DF /* PrincipalResponse.swift */,
 			);
-			path = PickleRickUITests;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E5AD1C20298C1584005777DF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD1C21298C1584005777DF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +154,6 @@
 			productReference = E5AD1BF4298AD4C8005777DF /* PickleRickTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E5AD1BFD298AD4C8005777DF /* PickleRickUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5AD1C0E298AD4C8005777DF /* Build configuration list for PBXNativeTarget "PickleRickUITests" */;
-			buildPhases = (
-				E5AD1BFA298AD4C8005777DF /* Sources */,
-				E5AD1BFB298AD4C8005777DF /* Frameworks */,
-				E5AD1BFC298AD4C8005777DF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E5AD1C00298AD4C8005777DF /* PBXTargetDependency */,
-			);
-			name = PickleRickUITests;
-			productName = PickleRickUITests;
-			productReference = E5AD1BFE298AD4C8005777DF /* PickleRickUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +168,6 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					E5AD1BF3298AD4C8005777DF = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = E5AD1BE3298AD4C6005777DF;
-					};
-					E5AD1BFD298AD4C8005777DF = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = E5AD1BE3298AD4C6005777DF;
 					};
@@ -221,7 +188,6 @@
 			targets = (
 				E5AD1BE3298AD4C6005777DF /* PickleRick */,
 				E5AD1BF3298AD4C8005777DF /* PickleRickTests */,
-				E5AD1BFD298AD4C8005777DF /* PickleRickUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,19 +197,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5AD1BEF298AD4C8005777DF /* Preview Assets.xcassets in Resources */,
+				E5AD1C22298C1584005777DF /* Preview Assets.xcassets in Resources */,
 				E5AD1BEC298AD4C8005777DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E5AD1BF2298AD4C8005777DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5AD1BFC298AD4C8005777DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,6 +218,9 @@
 			files = (
 				E5AD1BEA298AD4C6005777DF /* ContentView.swift in Sources */,
 				E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */,
+				E5AD1C1E298C154A005777DF /* CharacterResponse.swift in Sources */,
+				E5AD1C1D298C154A005777DF /* InfoResponse.swift in Sources */,
+				E5AD1C1F298C154A005777DF /* PrincipalResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,15 +232,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5AD1BFA298AD4C8005777DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5AD1C03298AD4C8005777DF /* PickleRickUITests.swift in Sources */,
-				E5AD1C05298AD4C8005777DF /* PickleRickUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +239,6 @@
 			isa = PBXTargetDependency;
 			target = E5AD1BE3298AD4C6005777DF /* PickleRick */;
 			targetProxy = E5AD1BF5298AD4C8005777DF /* PBXContainerItemProxy */;
-		};
-		E5AD1C00298AD4C8005777DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E5AD1BE3298AD4C6005777DF /* PickleRick */;
-			targetProxy = E5AD1BFF298AD4C8005777DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,6 +368,7 @@
 				DEVELOPMENT_TEAM = 34Z652334Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PickleRick/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +398,7 @@
 				DEVELOPMENT_TEAM = 34Z652334Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PickleRick/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -507,42 +457,6 @@
 			};
 			name = Release;
 		};
-		E5AD1C0F298AD4C8005777DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 34Z652334Z;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = VenomSnake.PickleRickUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PickleRick;
-			};
-			name = Debug;
-		};
-		E5AD1C10298AD4C8005777DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 34Z652334Z;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = VenomSnake.PickleRickUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PickleRick;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,15 +483,6 @@
 			buildConfigurations = (
 				E5AD1C0C298AD4C8005777DF /* Debug */,
 				E5AD1C0D298AD4C8005777DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5AD1C0E298AD4C8005777DF /* Build configuration list for PBXNativeTarget "PickleRickUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5AD1C0F298AD4C8005777DF /* Debug */,
-				E5AD1C10298AD4C8005777DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
