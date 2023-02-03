@@ -8,23 +8,19 @@
 import SwiftUI
 
 struct URLImage: View {
-    @ObservedObject var imageLoader = ImageLoader()
-    let url: String
-    let placeholder: String
+    private let urlString: String
     
-    init(url: String, placeholder: String = "placeholder") {
-        self.url = url
-        self.placeholder = placeholder
-        self.imageLoader.downloadImage(url: self.url)
+    init(urlString: String) {
+        self.urlString = urlString
     }
     
     var body: some View {
-        guard let data = self.imageLoader.downloadedData, let uiImage = UIImage(data: data) else {
-            return Image("Warning")
+        AsyncImage(url: URL(string: urlString)) { image in
+            image
+                .resizable()
+        } placeholder: {
+            Image("Warning")
                 .resizable()
         }
-        return Image(uiImage: uiImage)
-            .resizable()
-            
     }
 }

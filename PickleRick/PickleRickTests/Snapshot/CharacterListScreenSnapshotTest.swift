@@ -15,6 +15,7 @@ final class CharacterListScreenSnapshotTest: XCTestCase {
     private var service: MockCharactersServices!
     private var viewModel: CharacterListViewModel!
     private var screen: CharacterListScreen!
+    private var isRecord: Bool = false
     
     override func setUp() {
         self.service = MockCharactersServices()
@@ -32,21 +33,21 @@ final class CharacterListScreenSnapshotTest: XCTestCase {
         self.service.characters = [CharacterResponse(id: 1, name: "name", status: .alive, gender: .male, created: "Some days")]
         
         let vc = UIHostingController(rootView: screen)
-        assertSnapshot(matching: vc, as: .image(on: .iPhone13Pro))
-        assertSnapshot(matching: vc, as: .image(on: .iPadPro12_9))
+        assertSnapshot(matching: vc, as: .image(on: .iPhone13Pro), record: isRecord)
+        assertSnapshot(matching: vc, as: .image(on: .iPadPro12_9), record: isRecord)
     }
     
     func test_ScreenLoading() {
         let vc = UIHostingController(rootView: screen)
-        assertSnapshot(matching: vc, as: .image(on: .iPhone13Pro))
-        assertSnapshot(matching: vc, as: .image(on: .iPadPro12_9))
+        assertSnapshot(matching: vc, as: .image(on: .iPhone13Pro), record: isRecord)
+        assertSnapshot(matching: vc, as: .image(on: .iPadPro12_9), record: isRecord)
     }
     
     func test_ScreenFailed() {
         self.service.error = .badURL
         
         let vc = UIHostingController(rootView: screen)
-        assertSnapshot(matching: vc, as: .image(on: .iPhone13Pro))
-        assertSnapshot(matching: vc, as: .image(on: .iPadPro12_9))
+        assertSnapshot(matching: vc, as: .image(on: .iPhone13Pro), record: isRecord)
+        assertSnapshot(matching: vc, as: .image(on: .iPadPro12_9), record: isRecord)
     }
 }

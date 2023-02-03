@@ -29,7 +29,7 @@ fileprivate struct HeaderIphone: View {
     
     var body: some View {
         VStack {
-            URLImage(url: detail?.image ?? String())
+            URLImage(urlString: detail?.image ?? String())
                 .frame(width: 200, height: 200, alignment: .center)
                 .cornerRadius(12)
             Text(detail?.name ?? String())
@@ -51,7 +51,7 @@ fileprivate struct HeaderIpad: View {
     
     var body: some View {
         HStack {
-            URLImage(url: detail?.image ?? String())
+            URLImage(urlString: detail?.image ?? String())
                 .frame(width: 300, height: 300, alignment: .center)
                 .cornerRadius(12)
                 .padding(.trailing, 60)

@@ -40,7 +40,6 @@
 		E5AD1C65298CA1D3005777DF /* CharacterDetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C64298CA1D3005777DF /* CharacterDetailViewModelTest.swift */; };
 		E5AD1C67298CA7F6005777DF /* CharacterDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C66298CA7F6005777DF /* CharacterDetailScreen.swift */; };
 		E5AD1C69298CAB23005777DF /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C68298CAB23005777DF /* URLImage.swift */; };
-		E5AD1C6B298CAB4E005777DF /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C6A298CAB4E005777DF /* ImageLoader.swift */; };
 		E5AD1C6D298CAF1A005777DF /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C6C298CAF1A005777DF /* CharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,7 +90,6 @@
 		E5AD1C64298CA1D3005777DF /* CharacterDetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModelTest.swift; sourceTree = "<group>"; };
 		E5AD1C66298CA7F6005777DF /* CharacterDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailScreen.swift; sourceTree = "<group>"; };
 		E5AD1C68298CAB23005777DF /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
-		E5AD1C6A298CAB4E005777DF /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		E5AD1C6C298CAF1A005777DF /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				E5AD1C34298C281D005777DF /* CharacterService.swift */,
-				E5AD1C6A298CAB4E005777DF /* ImageLoader.swift */,
 				E5AD1C2F298C236B005777DF /* NetworkError.swift */,
 				E5AD1C31298C245B005777DF /* Protocols */,
 			);
@@ -417,7 +414,6 @@
 				E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */,
 				E5AD1C47298C5849005777DF /* BigBaseView.swift in Sources */,
 				E5AD1C56298C730B005777DF /* View+Extensions.swift in Sources */,
-				E5AD1C6B298CAB4E005777DF /* ImageLoader.swift in Sources */,
 				E5AD1C1E298C154A005777DF /* CharacterResponse.swift in Sources */,
 				E5AD1C58298C8040005777DF /* String+Extensions.swift in Sources */,
 				E5AD1C53298C6B70005777DF /* CharacterListView.swift in Sources */,
