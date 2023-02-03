@@ -12,7 +12,7 @@ struct CharacterListView: View {
     
     var body: some View {
         List(self.characters, id: \.id) { character in
-            NavigationLink(destination: Text("name")) {
+            NavigationLink(destination: CharacterDetailScreen(character.id)) {
                 CharacterCell(character: character)
             }
         }
