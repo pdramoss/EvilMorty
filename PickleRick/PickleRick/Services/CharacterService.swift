@@ -16,7 +16,7 @@ class CharacterService: CharactersServiceProtocol {
         self.urlSession = urlSession
     }
     
-    func getAllCharacter(completion: @escaping (Result<[CharacterResponse], NetworkError>) -> Void) {
+    func getAllCharacters(completion: @escaping (Result<[CharacterResponse], NetworkError>) -> Void) {
         guard let charactersURL = URL(string: self.urlString) else {
             return completion(.failure(.badURL))
         }
@@ -29,6 +29,28 @@ class CharacterService: CharactersServiceProtocol {
             do {
                 let principalResponse = try JSONDecoder().decode(PrincipalResponse.self, from: data)
                 completion(.success(principalResponse.results))
+            } catch {
+                Logger.error(error)
+                completion(.failure(.parseFail))
+            }
+        }
+        dataTask.resume()
+    }
+    
+    func getCharacter(_ id: Int, completion: @escaping (Result<CharacterDetailResponse, NetworkError>) -> Void) {
+        
+        guard !self.urlString.isEmpty,  let charactersURL = URL(string: self.urlString + "/\(id)") else {
+            return completion(.failure(.badURL))
+        }
+        
+        let dataTask = self.urlSession.dataTask(with: charactersURL) { data, _, error in
+            guard let data = data, error == nil else {
+                return completion(.failure(.noData))
+            }
+            
+            do {
+                let detailResponse = try JSONDecoder().decode(CharacterDetailResponse.self, from: data)
+                completion(.success(detailResponse))
             } catch {
                 Logger.error(error)
                 completion(.failure(.parseFail))

@@ -24,11 +24,11 @@ final class CharacterServiceTest: XCTestCase {
         MockURLProtocol.error = nil
     }
     
-    func testService_WhenSuccessResponse_ReturnSuccess() {
-        MockURLProtocol.stubResponseData = jsonString.data(using: .utf8)
+    func testAllCharactersService_WhenSuccessResponse_ReturnSuccess() {
+        MockURLProtocol.stubResponseData = jsonCharactersString.data(using: .utf8)
         let expectation = self.expectation(description: "Characters Web Service Response Expectation")
         
-        sut.getAllCharacter { result in
+        sut.getAllCharacters { result in
             switch result {
             case let .success(characters):
                 XCTAssertEqual(characters.count, 2)
@@ -40,11 +40,29 @@ final class CharacterServiceTest: XCTestCase {
         self.wait(for: [expectation], timeout: 5)
     }
     
-    func testService_WhenURLEmpty_ReturnError() {
+    func testDetailCharacterService_WhenSuccessResponse_ReturnSuccess() {
+        MockURLProtocol.stubResponseData = jsonDetailCharacterString.data(using: .utf8)
+        let expectation = self.expectation(description: "Characters Web Service Response Expectation")
+        
+        sut.getCharacter(100) { result in
+            switch result {
+            case let .success(detail):
+                XCTAssertEqual(detail.id, 100)
+                XCTAssertEqual(detail.status, .dead)
+                XCTAssertEqual(detail.gender, .unknown)
+                expectation.fulfill()
+            case let .failure(error):
+                XCTFail("Expected to be a success but got a failure with \(error)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 5)
+    }
+    
+    func testAllCharactersService_WhenURLEmpty_ReturnError() {
         sut = CharacterService(urlString: "")
         let expectation = self.expectation(description: "Characters Web Service Response Expectation")
         
-        sut.getAllCharacter { result in
+        sut.getAllCharacters { result in
             switch result {
             case let .success(characters):
                 XCTFail("Expected to be a failure but got a success with \(characters)")
@@ -56,11 +74,27 @@ final class CharacterServiceTest: XCTestCase {
         self.wait(for: [expectation], timeout: 5)
     }
     
-    func testService_WhenParseFail_ReturnError() {
+    func testDetailCharacterService_WhenURLEmpty_ReturnError() {
+        sut = CharacterService(urlString: "")
+        let expectation = self.expectation(description: "Characters Web Service Response Expectation")
+        
+        sut.getCharacter(100) { result in
+            switch result {
+            case let .success(characters):
+                XCTFail("Expected to be a failure but got a success with \(characters)")
+            case let .failure(error):
+                XCTAssertEqual(error.localizedDescription, NetworkError.badURL.localizedDescription)
+                expectation.fulfill()
+            }
+        }
+        self.wait(for: [expectation], timeout: 5)
+    }
+    
+    func testAllCharactersService_WhenParseFail_ReturnError() {
         MockURLProtocol.stubResponseData = "jsonString".data(using: .utf8)
         let expectation = self.expectation(description: "Characters Web Service Response Expectation")
         
-        sut.getAllCharacter { result in
+        sut.getAllCharacters { result in
             switch result {
             case let .success(characters):
                 XCTFail("Expected to be a failure but got a success with \(characters)")
@@ -72,11 +106,43 @@ final class CharacterServiceTest: XCTestCase {
         self.wait(for: [expectation], timeout: 5)
     }
     
-    func testService_WhenDataIsNil_ReturnError() {
+    func testDetailCharacterService_WhenParseFail_ReturnError() {
+        MockURLProtocol.stubResponseData = "jsonString".data(using: .utf8)
+        let expectation = self.expectation(description: "Characters Web Service Response Expectation")
+        
+        sut.getCharacter(100) { result in
+            switch result {
+            case let .success(characters):
+                XCTFail("Expected to be a failure but got a success with \(characters)")
+            case let .failure(error):
+                XCTAssertEqual(error.localizedDescription, NetworkError.parseFail.localizedDescription)
+                expectation.fulfill()
+            }
+        }
+        self.wait(for: [expectation], timeout: 5)
+    }
+    
+    func testAllCharactersService_WhenDataIsNil_ReturnError() {
         MockURLProtocol.error = Test.failure
         let expectation = self.expectation(description: "Characters Web Service Response Expectation")
         
-        sut.getAllCharacter { result in
+        sut.getAllCharacters { result in
+            switch result {
+            case let .success(characters):
+                XCTFail("Expected to be a failure but got a success with \(characters)")
+            case let .failure(error):
+                XCTAssertEqual(error.localizedDescription, NetworkError.noData.localizedDescription)
+                expectation.fulfill()
+            }
+        }
+        self.wait(for: [expectation], timeout: 5)
+    }
+    
+    func testDetailCharacterService_WhenDataIsNil_ReturnError() {
+        MockURLProtocol.error = Test.failure
+        let expectation = self.expectation(description: "Characters Web Service Response Expectation")
+        
+        sut.getCharacter(100) { result in
             switch result {
             case let .success(characters):
                 XCTFail("Expected to be a failure but got a success with \(characters)")
@@ -92,7 +158,7 @@ final class CharacterServiceTest: XCTestCase {
         case failure
     }
     
-    private let jsonString = """
+    private let jsonCharactersString = """
 {
     "info": {
         "count": 826,
@@ -147,6 +213,31 @@ final class CharacterServiceTest: XCTestCase {
             "created": "2017-11-04T18:50:21.651Z"
         }
     ]
+}
+"""
+    
+    private let jsonDetailCharacterString = """
+{
+    "id": 100,
+    "name": "Bubonic Plague",
+    "status": "Dead",
+    "species": "Disease",
+    "type": "",
+    "gender": "unknown",
+    "origin": {
+        "name": "Anatomy Park",
+        "url": "https://rickandmortyapi.com/api/location/5"
+    },
+    "location": {
+        "name": "Anatomy Park",
+        "url": "https://rickandmortyapi.com/api/location/5"
+    },
+    "image": "https://rickandmortyapi.com/api/character/avatar/100.jpeg",
+    "episode": [
+        "https://rickandmortyapi.com/api/episode/3"
+    ],
+    "url": "https://rickandmortyapi.com/api/character/100",
+    "created": "2017-12-01T12:02:21.611Z"
 }
 """
 }

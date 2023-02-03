@@ -8,5 +8,6 @@
 import Foundation
 
 protocol CharactersServiceProtocol {
-    func getAllCharacter(completion: @escaping (Result<[CharacterResponse], NetworkError>) -> Void)
+    func getAllCharacters(completion: @escaping (Result<[CharacterResponse], NetworkError>) -> Void)
+    func getCharacter(_ id: Int, completion: @escaping (Result<CharacterDetailResponse, NetworkError>) -> Void)
 }

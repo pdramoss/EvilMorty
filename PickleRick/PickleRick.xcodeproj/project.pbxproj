@@ -35,6 +35,8 @@
 		E5AD1C58298C8040005777DF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C57298C8040005777DF /* String+Extensions.swift */; };
 		E5AD1C5E298C89D1005777DF /* CharacterListScreenSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C5D298C89D1005777DF /* CharacterListScreenSnapshotTest.swift */; };
 		E5AD1C61298C8DB6005777DF /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = E5AD1C60298C8DB6005777DF /* SnapshotTesting */; };
+		E5AD1C63298C976C005777DF /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C62298C976C005777DF /* CharacterDetailViewModel.swift */; };
+		E5AD1C65298CA1D3005777DF /* CharacterDetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C64298CA1D3005777DF /* CharacterDetailViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		E5AD1C55298C730B005777DF /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		E5AD1C57298C8040005777DF /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		E5AD1C5D298C89D1005777DF /* CharacterListScreenSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListScreenSnapshotTest.swift; sourceTree = "<group>"; };
+		E5AD1C62298C976C005777DF /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		E5AD1C64298CA1D3005777DF /* CharacterDetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,10 +144,10 @@
 		E5AD1BF7298AD4C8005777DF /* PickleRickTests */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD1C5C298C89AC005777DF /* Snapshot */,
-				E5AD1C4D298C61A1005777DF /* ViewModels */,
 				E5AD1C39298C307E005777DF /* Mocks */,
 				E5AD1C36298C2CFA005777DF /* Services */,
+				E5AD1C5C298C89AC005777DF /* Snapshot */,
+				E5AD1C4D298C61A1005777DF /* ViewModels */,
 			);
 			path = PickleRickTests;
 			sourceTree = "<group>";
@@ -151,10 +155,10 @@
 		E5AD1C19298C154A005777DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD1C1A298C154A005777DF /* InfoResponse.swift */,
-				E5AD1C1B298C154A005777DF /* CharacterResponse.swift */,
-				E5AD1C1C298C154A005777DF /* PrincipalResponse.swift */,
 				E5AD1C50298C622A005777DF /* CharacterDetailResponse.swift */,
+				E5AD1C1B298C154A005777DF /* CharacterResponse.swift */,
+				E5AD1C1A298C154A005777DF /* InfoResponse.swift */,
+				E5AD1C1C298C154A005777DF /* PrincipalResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,8 +183,8 @@
 		E5AD1C27298C1F48005777DF /* Logger */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD1C28298C1F64005777DF /* LoggerProtocol.swift */,
 				E5AD1C2C298C1FC1005777DF /* Logger.swift */,
+				E5AD1C28298C1F64005777DF /* LoggerProtocol.swift */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -188,9 +192,9 @@
 		E5AD1C2E298C233B005777DF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD1C31298C245B005777DF /* Protocols */,
-				E5AD1C2F298C236B005777DF /* NetworkError.swift */,
 				E5AD1C34298C281D005777DF /* CharacterService.swift */,
+				E5AD1C2F298C236B005777DF /* NetworkError.swift */,
+				E5AD1C31298C245B005777DF /* Protocols */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -214,8 +218,8 @@
 		E5AD1C39298C307E005777DF /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD1C3A298C30C0005777DF /* MockURLProtocol.swift */,
 				E5AD1C42298C55D1005777DF /* MockCharactersServices.swift */,
+				E5AD1C3A298C30C0005777DF /* MockURLProtocol.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -231,8 +235,9 @@
 		E5AD1C3F298C50BF005777DF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD1C40298C5131005777DF /* CharacterListViewModel.swift */,
 				E5AD1C44298C5741005777DF /* BaseViewModel.swift */,
+				E5AD1C62298C976C005777DF /* CharacterDetailViewModel.swift */,
+				E5AD1C40298C5131005777DF /* CharacterListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -241,9 +246,9 @@
 			isa = PBXGroup;
 			children = (
 				E5AD1C46298C5849005777DF /* BigBaseView.swift */,
+				E5AD1C52298C6B70005777DF /* CharacterListView.swift */,
 				E5AD1C49298C5A91005777DF /* FailedView.swift */,
 				E5AD1C4B298C5D76005777DF /* LoadingView.swift */,
-				E5AD1C52298C6B70005777DF /* CharacterListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 		E5AD1C4D298C61A1005777DF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E5AD1C64298CA1D3005777DF /* CharacterDetailViewModelTest.swift */,
 				E5AD1C4E298C61B6005777DF /* CharacterListViewModelTest.swift */,
 			);
 			path = ViewModels;
@@ -259,8 +265,8 @@
 		E5AD1C54298C72DF005777DF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E5AD1C55298C730B005777DF /* View+Extensions.swift */,
 				E5AD1C57298C8040005777DF /* String+Extensions.swift */,
+				E5AD1C55298C730B005777DF /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AD1C63298C976C005777DF /* CharacterDetailViewModel.swift in Sources */,
 				E5AD1C29298C1F64005777DF /* LoggerProtocol.swift in Sources */,
 				E5AD1C51298C622A005777DF /* CharacterDetailResponse.swift in Sources */,
 				E5AD1C4C298C5D76005777DF /* LoadingView.swift in Sources */,
@@ -414,6 +421,7 @@
 				E5AD1C5E298C89D1005777DF /* CharacterListScreenSnapshotTest.swift in Sources */,
 				E5AD1C43298C55D1005777DF /* MockCharactersServices.swift in Sources */,
 				E5AD1C3B298C30C0005777DF /* MockURLProtocol.swift in Sources */,
+				E5AD1C65298CA1D3005777DF /* CharacterDetailViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
