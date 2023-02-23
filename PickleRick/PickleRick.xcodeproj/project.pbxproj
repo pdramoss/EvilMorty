@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E5AABAD9298CC40100557600 /* CharacterDetailScreenSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AABAD8298CC40100557600 /* CharacterDetailScreenSnapshotTest.swift */; };
+		E5AB0AF329B957C90012B6E1 /* Hey_Comic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5AB0AF129B957C90012B6E1 /* Hey_Comic.ttf */; };
+		E5AB0AF429B957C90012B6E1 /* Get_Schwifty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5AB0AF229B957C90012B6E1 /* Get_Schwifty.ttf */; };
+		E5AB0AF629B95ACD0012B6E1 /* CharacterBoundsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB0AF529B95ACD0012B6E1 /* CharacterBoundsCellView.swift */; };
 		E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */; };
 		E5AD1BEC298AD4C8005777DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AD1BEB298AD4C8005777DF /* Assets.xcassets */; };
 		E5AD1C1D298C154A005777DF /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD1C1A298C154A005777DF /* InfoResponse.swift */; };
@@ -55,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		E5AABAD8298CC40100557600 /* CharacterDetailScreenSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailScreenSnapshotTest.swift; sourceTree = "<group>"; };
+		E5AB0AF129B957C90012B6E1 /* Hey_Comic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hey_Comic.ttf; sourceTree = "<group>"; };
+		E5AB0AF229B957C90012B6E1 /* Get_Schwifty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Get_Schwifty.ttf; sourceTree = "<group>"; };
+		E5AB0AF529B95ACD0012B6E1 /* CharacterBoundsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBoundsCellView.swift; sourceTree = "<group>"; };
 		E5AD1BE4298AD4C6005777DF /* PickleRick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickleRick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AD1BE7298AD4C6005777DF /* PickleRickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickleRickApp.swift; sourceTree = "<group>"; };
 		E5AD1BEB298AD4C8005777DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +118,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5A96E2529A7BDA3008DDC28 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E5AB0AF229B957C90012B6E1 /* Get_Schwifty.ttf */,
+				E5AB0AF129B957C90012B6E1 /* Hey_Comic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E5AD1BDB298AD4C6005777DF = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +153,7 @@
 				E5AD1BEB298AD4C8005777DF /* Assets.xcassets */,
 				E5AD1C23298C1B27005777DF /* EnvironmentConfig */,
 				E5AD1C54298C72DF005777DF /* Extensions */,
+				E5A96E2529A7BDA3008DDC28 /* Fonts */,
 				E5AD1C27298C1F48005777DF /* Logger */,
 				E5AD1C19298C154A005777DF /* Models */,
 				E5AD1C20298C1584005777DF /* Preview Content */,
@@ -260,6 +276,7 @@
 				E5AD1C49298C5A91005777DF /* FailedView.swift */,
 				E5AD1C4B298C5D76005777DF /* LoadingView.swift */,
 				E5AD1C68298CAB23005777DF /* URLImage.swift */,
+				E5AB0AF529B95ACD0012B6E1 /* CharacterBoundsCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -381,8 +398,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AB0AF429B957C90012B6E1 /* Get_Schwifty.ttf in Resources */,
 				E5AD1C22298C1584005777DF /* Preview Assets.xcassets in Resources */,
 				E5AD1BEC298AD4C8005777DF /* Assets.xcassets in Resources */,
+				E5AB0AF329B957C90012B6E1 /* Hey_Comic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +429,7 @@
 				E5AD1C45298C5741005777DF /* BaseViewModel.swift in Sources */,
 				E5AD1C35298C281D005777DF /* CharacterService.swift in Sources */,
 				E5AD1C26298C1E3A005777DF /* BuildConfiguration.swift in Sources */,
+				E5AB0AF629B95ACD0012B6E1 /* CharacterBoundsCellView.swift in Sources */,
 				E5AD1C2D298C1FC1005777DF /* Logger.swift in Sources */,
 				E5AD1BE8298AD4C6005777DF /* PickleRickApp.swift in Sources */,
 				E5AD1C47298C5849005777DF /* BigBaseView.swift in Sources */,

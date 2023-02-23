@@ -10,7 +10,6 @@ import Foundation
 struct CharacterResponse: Codable {
     var id: Int
     var name: String
+    var image: String
     var status: CharacterStatusResponse
-    var gender: CharacterGenderResponse
-    var created: String
 }

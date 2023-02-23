@@ -12,4 +12,14 @@ extension View {
     func embedNavigationView() -> some View {
         NavigationView { self }
     }
+    
+    func fullBackground(_ imageName: String) -> some View {
+        return background {
+            Image(imageName)
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+                .opacity(0.35)
+        }
+    }
 }

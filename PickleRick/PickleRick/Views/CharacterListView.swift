@@ -13,7 +13,7 @@ struct CharacterListView: View {
     var body: some View {
         List(self.characters, id: \.id) { character in
             NavigationLink(destination: CharacterDetailScreen(character.id)) {
-                CharacterCell(character: character)
+                CharacterBoundsCellView(character: character)
             }
         }
     }
@@ -31,15 +31,8 @@ struct CharacterCell: View {
                     Spacer()
                     Text(character.status.rawValue)
                     Spacer()
-                    Text(character.gender.emoji)
-                    Spacer()
                 }
                 .font(.system(size: 22, weight: .medium, design: .rounded))
-                HStack {
-                    Text("Created: ")
-                    Text(character.created.dateExpectedFormat)
-                }
-                .font(.system(size: 16, weight: .medium, design: .rounded))
             }.padding(5)
         }.contentShape(Rectangle())
     }
@@ -48,8 +41,14 @@ struct CharacterCell: View {
 struct CharacterListView_Previews: PreviewProvider {
     static var previews: some View {
         let list = [
-            CharacterResponse(id: 1, name: "Rick", status: .alive, gender: .male, created: "Some Day"),
-            CharacterResponse(id: 2, name: "Summer", status: .dead, gender: .female, created: "Some Day")
+            CharacterResponse(
+                id: 1, name: "Rick",
+                image: "https://rickandmortyapi.com/api/character/avatar/100.jpeg",
+                status: .alive),
+            CharacterResponse(
+                id: 2, name: "Summer",
+                image: "https://rickandmortyapi.com/api/character/avatar/100.jpeg",
+                status: .dead)
         ]
         CharacterListView(characters: list)
     }
