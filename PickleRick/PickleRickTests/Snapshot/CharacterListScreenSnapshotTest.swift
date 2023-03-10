@@ -30,7 +30,7 @@ final class CharacterListScreenSnapshotTest: XCTestCase {
     }
     
     func test_ScreenSuccess() {
-        self.service.characters = [CharacterResponse(id: 1, name: "name", status: .alive, gender: .male, created: "Some days")]
+        self.service.characters = [CharacterResponse(id: 1, name: "name", image: "Other", status: .alive)]
         
         let vc = UIHostingController(rootView: screen)
         assertSnapshot(matching: vc, as: .image(on: .iPhone13Pro), record: isRecord)

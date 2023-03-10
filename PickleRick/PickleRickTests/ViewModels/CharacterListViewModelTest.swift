@@ -23,7 +23,7 @@ final class CharacterListViewModelTest: XCTestCase {
     }
     
     func testCallService_WhenResultIsSuccess_StateSuccess() {
-        service.characters = [CharacterResponse(id: 1, name: "name", status: .alive, gender: .male, created: "Some days")]
+        service.characters = [CharacterResponse(id: 1, name: "name", image: "Other", status: .alive)]
         
         sut.getAllCharacters()
         

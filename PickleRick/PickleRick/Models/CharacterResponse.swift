@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CharacterResponse: Codable {
+struct CharacterResponse: Codable, Identifiable {
     var id: Int
     var name: String
     var image: String

@@ -12,6 +12,7 @@ struct PickleRickApp: App {
     var body: some Scene {
         WindowGroup {
             CharacterListScreen()
+                .preferredColorScheme(.dark)
         }
     }
 }

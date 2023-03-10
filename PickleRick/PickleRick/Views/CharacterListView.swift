@@ -15,26 +15,10 @@ struct CharacterListView: View {
             NavigationLink(destination: CharacterDetailScreen(character.id)) {
                 CharacterBoundsCellView(character: character)
             }
+            .listRowSeparator(.hidden)
         }
-    }
-}
-
-struct CharacterCell: View {
-    let character: CharacterResponse
-    
-    var body: some View {
-        HStack {
-            VStack {
-                Text(character.name)
-                    .font(.system(size: 28, weight: .heavy, design: .rounded))
-                HStack {
-                    Spacer()
-                    Text(character.status.rawValue)
-                    Spacer()
-                }
-                .font(.system(size: 22, weight: .medium, design: .rounded))
-            }.padding(5)
-        }.contentShape(Rectangle())
+        .scrollIndicators(.hidden)
+        .scrollContentBackground(.hidden)
     }
 }
 
@@ -47,7 +31,7 @@ struct CharacterListView_Previews: PreviewProvider {
                 status: .alive),
             CharacterResponse(
                 id: 2, name: "Summer",
-                image: "https://rickandmortyapi.com/api/character/avatar/100.jpeg",
+                image: "Outer",
                 status: .dead)
         ]
         CharacterListView(characters: list)

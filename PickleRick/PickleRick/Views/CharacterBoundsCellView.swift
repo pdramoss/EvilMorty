@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CharacterBoundsCellView: View {
     let character: CharacterResponse
-    
     @ViewBuilder
     var body: some View {
         ZStack(alignment: .top) {
