@@ -47,21 +47,6 @@ struct CharacterBoundsCellView: View {
         }
         .padding(10)
     }
-    
-    /**
-     ZStack {
-     ScrollView {
-     VStack {
-     resultView
-     .padding()
-     .padding(.top, 80)
-     resultView
-     .padding()
-     .padding(.top, 80)
-     }
-     }
-     }
-     */
 }
 
 struct CharacterBoundsListView_Previews: PreviewProvider {

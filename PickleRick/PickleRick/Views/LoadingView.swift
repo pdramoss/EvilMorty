@@ -14,9 +14,3 @@ struct LoadingView: View {
             .frame(width: 250, height: 250, alignment: .center)
     }
 }
-
-struct Loading_Previews: PreviewProvider {
-    static var previews: some View {
-        LoadingView()
-    }
-}

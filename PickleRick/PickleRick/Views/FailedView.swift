@@ -14,9 +14,3 @@ struct FailedView: View {
             .frame(width: 250, height: 250, alignment: .center)
     }
 }
-
-struct FailedView_Previews: PreviewProvider {
-    static var previews: some View {
-        FailedView()
-    }
-}

@@ -49,7 +49,7 @@ final class CharacterServiceTest: XCTestCase {
             case let .success(detail):
                 XCTAssertEqual(detail.id, 100)
                 XCTAssertEqual(detail.status, .dead)
-                XCTAssertEqual(detail.gender, .unknown)
+                XCTAssertEqual(detail.gender, "unknown")
                 expectation.fulfill()
             case let .failure(error):
                 XCTFail("Expected to be a success but got a failure with \(error)")

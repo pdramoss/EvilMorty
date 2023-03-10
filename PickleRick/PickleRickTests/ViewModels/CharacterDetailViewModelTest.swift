@@ -27,11 +27,11 @@ final class CharacterDetailViewModelTest: XCTestCase {
         service.characterId = CharacterDetailResponse(id: 1,
                                                       name: "Bubonic Plague",
                                                       status: .alive,
-                                                      species: .human,
+                                                      species: "human",
                                                       type: "",
-                                                      gender: .female,
-                                                      origin: CharacterOriginResponse(name: "name", url: "url"),
-                                                      location: CharacterOriginResponse(name: "name", url: "url"),
+                                                      gender: "female",
+                                                      origin: CharacterOriginResponse(name: "origin"),
+                                                      location: CharacterOriginResponse(name: "location"),
                                                       image: "image",
                                                       created: "created")
         sut.getDetail(100)

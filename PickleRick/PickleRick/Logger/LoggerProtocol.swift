@@ -10,7 +10,6 @@ import Foundation
 enum LoggerEvent: String {
     case error = "‼️" // error
     case info = "💬" // debug
-    case warning = "⚠️" // warning
 }
 
 protocol LoggerProtocol {
@@ -19,9 +18,6 @@ protocol LoggerProtocol {
     
     // Log debug message
     static func info(_ object: Any, filename: String, functionName: String)
-    
-    // Log warning message
-    static func warning(_ object: Any, filename: String, functionName: String)
 }
 
 extension LoggerProtocol {

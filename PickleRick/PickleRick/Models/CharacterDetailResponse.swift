@@ -11,9 +11,9 @@ struct CharacterDetailResponse: Codable {
     var id: Int
     var name: String
     var status: CharacterStatusResponse
-    var species: CharacterSpeciesResponse
+    var species: String
     var type: String
-    var gender: CharacterGenderResponse
+    var gender: String
     var origin: CharacterOriginResponse
     var location: CharacterOriginResponse
     var image: String
@@ -22,7 +22,6 @@ struct CharacterDetailResponse: Codable {
 
 struct CharacterOriginResponse: Codable {
     var name: String
-    var url: String
 }
 
 enum CharacterStatusResponse: String, Codable {
@@ -30,30 +29,4 @@ enum CharacterStatusResponse: String, Codable {
     case dead = "Dead"
     case unknown = "unknown"
     case none = ""
-}
-
-enum CharacterSpeciesResponse: String, Codable {
-    case human = "Human"
-    case alien = "Alien"
-    case disease = "Disease"
-    case humanoid = "Humanoid"
-    case none = ""
-}
-
-enum CharacterGenderResponse: String, Codable {
-    case female = "Female"
-    case male = "Male"
-    case genderless = "Genderless"
-    case unknown = "unknown"
-    case none = ""
-    
-    var emoji: String {
-        switch self {
-        case .female: return "👩‍🦰"
-        case .male: return "🧑‍🦰"
-        case .genderless: return "🥷"
-        case .unknown: return "👽"
-        case .none: return "🤖"
-        }
-    }
 }

@@ -13,10 +13,11 @@ struct CharacterListView: View {
     var body: some View {
         List(self.characters, id: \.id) { character in
             NavigationLink(destination: CharacterDetailScreen(character.id)) {
-                CharacterBoundsCellView(character: character)
+                CharacterBoundsCellView(character: character).tag(character.id)
             }
             .listRowSeparator(.hidden)
         }
+        .listStyle(.plain)
         .scrollIndicators(.hidden)
         .scrollContentBackground(.hidden)
     }

@@ -28,6 +28,7 @@ class CharacterService: CharactersServiceProtocol {
             
             do {
                 let principalResponse = try JSONDecoder().decode(PrincipalResponse.self, from: data)
+                Logger.info(principalResponse)
                 completion(.success(principalResponse.results))
             } catch {
                 Logger.error(error)
@@ -50,6 +51,7 @@ class CharacterService: CharactersServiceProtocol {
             
             do {
                 let detailResponse = try JSONDecoder().decode(CharacterDetailResponse.self, from: data)
+                Logger.info(detailResponse)
                 completion(.success(detailResponse))
             } catch {
                 Logger.error(error)

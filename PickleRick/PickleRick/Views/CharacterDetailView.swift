@@ -11,94 +11,123 @@ struct CharacterDetailView: View {
     let detail: CharacterDetailResponse?
     
     var body: some View {
-        VStack (alignment: .leading) {
-            if UIDevice().userInterfaceIdiom == .pad {
-                HeaderIpad(detail: detail)
-            } else {
-                HeaderIphone(detail: detail)
+        GeometryReader { reader in
+            ScrollView(.vertical) {
+                VStack {
+                    SectionDetailView(reader) {
+                        HeaderDetailView(detail: detail, itemWidth: reader.size.width)
+                    }
+                    SectionDetailView(reader) {
+                        DescriptionDetailView("Status", information: detail?.status.rawValue)
+                        DescriptionDetailView("Species", information: detail?.species)
+                        DescriptionDetailView("Type", information: detail?.type)
+                        DescriptionDetailView("Gender", information: detail?.gender)
+                    }
+                    SectionDetailView(reader) {
+                        DescriptionDetailView("Origin", information: detail?.origin.name)
+                        DescriptionDetailView("Location", information: detail?.location.name)
+                    }
+                    SectionDetailView(reader) {
+                        DescriptionDetailView("Created", information: detail?.created.dateExpectedFormat)
+                    }
+                    Spacer(minLength: 20)
+                }.frame(maxWidth: reader.size.width, maxHeight: .infinity)
             }
-            BodyDetail(detail: detail)
-                .padding(.top, 30)
-            Spacer()
         }
     }
 }
 
-fileprivate struct HeaderIphone: View {
-    let detail: CharacterDetailResponse?
+fileprivate struct DescriptionDetailView: View {
+    private let state: String
+    private let information: String
     
-    var body: some View {
-        VStack {
-            URLImage(urlString: detail?.image ?? String())
-                .frame(width: 200, height: 200, alignment: .center)
-                .cornerRadius(12)
-            Text(detail?.name ?? String())
-                .font(.system(size: 38, weight: .heavy, design: .rounded))
-            HStack {
-                Text("Gender: " + (detail?.gender.emoji ?? String()))
-                    .font(.system(size: 26, weight: .bold, design: .rounded))
-                Text("Status: " + (detail?.status.rawValue ?? String()))
-                    .font(.system(size: 26, weight: .bold, design: .rounded))
-            }
-            Text("Created: " + (detail?.created.dateExpectedFormat ?? String()))
-                .font(.system(size: 20, weight: .bold, design: .rounded))
-        }
+    public init(_ state: String, information: String? = nil) {
+        self.state = state
+        self.information = (information ?? "unknown").uppercased()
     }
-}
-
-fileprivate struct HeaderIpad: View {
-    let detail: CharacterDetailResponse?
     
     var body: some View {
         HStack {
+            Text("- \(state): ")
+                .font(.system(size: 20))
+                .bold()
+                .foregroundColor(.black)
+            Spacer()
+            Text(information.isEmpty ? "NA / NR" : information)
+                .font(.system(size: 16))
+                .foregroundColor(.gray)
+        }
+    }
+}
+
+fileprivate struct HeaderDetailView: View {
+    let detail: CharacterDetailResponse?
+    let itemWidth: CGFloat
+    
+    var body: some View {
+        VStack {
+            let imageWidth = itemWidth * (UIDevice().userInterfaceIdiom == .pad ? 0.45 : 0.65)
             URLImage(urlString: detail?.image ?? String())
-                .frame(width: 300, height: 300, alignment: .center)
-                .cornerRadius(12)
-                .padding(.trailing, 60)
+                .scaledToFit()
+                .frame(width: imageWidth, height: imageWidth)
+                .alignmentGuide(VerticalAlignment.top) { $0[VerticalAlignment.center] }
+                .aspectRatio(contentMode: .fit)
+                .clipShape(RoundedRectangle(cornerRadius: 25.0))
+                .shadow(radius: 10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .stroke(Color.black, lineWidth: 5)
+                )
+                .zIndex(1)
+            
             VStack {
                 Text(detail?.name ?? String())
-                    .font(.system(size: 48, weight: .heavy, design: .rounded))
-                Text("Gender: " + (detail?.gender.emoji ?? String()))
-                    .font(.system(size: 40, weight: .bold, design: .rounded))
-                Text("Status: " + (detail?.status.rawValue ?? String()))
-                    .font(.system(size: 40, weight: .bold, design: .rounded))
-                Text("Created: " + (detail?.created.dateExpectedFormat ?? String()))
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .font(.system(size: 28))
+                    .bold()
+                    .foregroundColor(.black)
+                    .frame(maxWidth: itemWidth)
             }
         }
     }
 }
 
-fileprivate struct BodyDetail: View {
-    let detail: CharacterDetailResponse?
+fileprivate struct SectionDetailView<Content>: View where Content: View {
+    private let content: Content
+    private let reader: GeometryProxy
     
-    private var textSize: CGFloat {
-        return UIDevice().userInterfaceIdiom == .pad ? 50 : 24
+    public init(_ reader: GeometryProxy, @ViewBuilder content: () -> Content) {
+        self.reader = reader
+        self.content = content()
     }
     
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text("Species: " + (detail?.species.rawValue ?? String()))
-            Text("Origin: " + (detail?.origin.name ?? String()))
-            Text("Location: " + (detail?.location.name ?? String()))
+    var body : some View {
+        VStack {
+            content
         }
-        .font(.system(size: textSize, weight: .bold, design: .rounded))
+        .frame(maxWidth: reader.size.width)
+        .padding()
+        .background {
+            Color.white
+        }
+        .cornerRadius(8)
+        .shadow(radius: 5, x: 5, y: 5)
     }
 }
+
 
 struct CharacterDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let detail = CharacterDetailResponse(
             id: 1,
-            name: "Bubonic Plague",
+            name: "Rick Sanchez",
             status: .alive,
-            species: .human,
+            species: "Human",
             type: "",
-            gender: .female,
-            origin: CharacterOriginResponse(name: "name", url: "url"),
-            location: CharacterOriginResponse(name: "name", url: "url"),
-            image: "https://rickandmortyapi.com/api/character/avatar/100.jpeg",
-            created: "created")
+            gender: "Male",
+            origin: CharacterOriginResponse(name: "Earth (C-137)"),
+            location: CharacterOriginResponse(name: "Citadel of Ricks"),
+            image: "some",
+            created: "2017-11-04T18:48:46.250Z")
         
         Group {
             CharacterDetailView(detail: detail)

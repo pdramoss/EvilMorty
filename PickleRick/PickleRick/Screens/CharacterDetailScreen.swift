@@ -19,7 +19,8 @@ struct CharacterDetailScreen: View {
     var body: some View {
         BigBaseView(state: detailVM.loadingState) {
             CharacterDetailView(detail: detailVM.detail)
-                .fullBackground("background_detail")
+                .padding(20)
+                .fullBackground("background_list")
         }
         .onAppear {
             detailVM.getDetail(id)
