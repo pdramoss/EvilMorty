@@ -25,9 +25,3 @@ struct CharacterListScreen: View {
         .embedNavigationView()
     }
 }
-
-struct CharactersScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        CharacterListScreen()
-    }
-}
